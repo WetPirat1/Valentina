@@ -1,0 +1,171 @@
+h1,h2,h3,h4,h5,p,a{
+    font-family: Abhaya Libre;
+}
+
+
+header{
+    max-height: 900px;
+    .header-container{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        max-height: 900px;
+                    }
+                }
+            }
+        }
+    }
+    nav{
+
+        text-align: center;
+        .container-fluid{
+            text-align: center;
+            .collapse{
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.about-me{
+    padding: 120px 0;
+    .about-me-container{
+        max-width: 1200px;
+        margin: 0 auto;
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .about-me-desc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 100px;
+
+            margin-bottom: 150px;
+            img{
+                width: 500px;
+                max-height: 700px;
+
+                border-top-left-radius: 150px;
+                border-top-right-radius: 150px;
+            }
+            .hero-right{
+                position: relative;
+                p{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                
+                    color: rgb(32, 35, 44);
+                    font-family: Abhaya Libre;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 120.77%;
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+    .dashed-line {
+        margin-top: 150px;
+        border: none;
+        border-top: 7px dashed #000; 
+        width: 100%; 
+    }
+}
+
+.advantages{
+    padding: 100px 0;
+    .advantages-container{
+        max-width: 1200px;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+
+        gap: 50px;
+
+        .advantages-left, .advantages-right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                max-width: 500px;
+                max-height: auto;
+            }
+
+            h2{
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 40px;
+
+                color: rgb(32, 35, 44);
+            }
+            ul{
+                li{
+                    p{
+                        text-align: center;
+
+                        color: rgb(32, 35, 44);
+                        font-family: Abhaya Libre;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 120.77%;
+
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .advantages-left{
+            h2{
+                margin-top: 40px;
+            }
+        }
+
+    }
+}
+
+.portfolio{
+    padding: 100px;
+    margin: 0;
+    .portfolio-container{
+        h2{
+            text-align: center;
+            font-size: 40px;
+
+            color: rgb(255, 255, 255);
+        }
+        ul{
+            display: flex;
+            flex: 1 1 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            gap: 100px;
+            
+            color: rgb(255, 255, 255);
+            li{
+                img{
+                    margin: 50px 0;
+                    max-width: 280;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.services{
+    .services-container{
+        
+    }
+}
