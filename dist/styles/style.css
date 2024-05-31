@@ -23,7 +23,7 @@ form {
 }
 
 .about-me-container, .advantages-container, .services-container,
-.contact-container, .reviews-container {
+.contact-container, .reviews-container, .footer-container {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -151,6 +151,7 @@ main .advantages .advantages-container .advantages-left, main .advantages .advan
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 main .advantages .advantages-container .advantages-left img, main .advantages .advantages-container .advantages-right img {
   max-width: 500px;
@@ -162,8 +163,10 @@ main .advantages .advantages-container .advantages-left h2, main .advantages .ad
   margin-bottom: 40px;
   color: rgb(32, 35, 44);
 }
+main .advantages .advantages-container .advantages-left ul, main .advantages .advantages-container .advantages-right ul {
+  padding: 0;
+}
 main .advantages .advantages-container .advantages-left ul li p, main .advantages .advantages-container .advantages-right ul li p {
-  text-align: center;
   color: rgb(32, 35, 44);
   font-family: Abhaya Libre;
   font-size: 24px;
@@ -191,32 +194,48 @@ main .portfolio .portfolio-container ul {
   gap: 100px;
   color: rgb(255, 255, 255);
 }
-main .portfolio .portfolio-container ul li img {
+main .portfolio .portfolio-container ul li a img {
   margin: 50px 0;
-  max-width: 280;
+  max-width: 280px;
   height: auto;
+  transition: transform 1s ease;
+}
+main .portfolio .portfolio-container ul li a img:hover {
+  transform: scale(1.1);
 }
 main .portfolio .portfolio-container ul li h3 {
   color: rgb(255, 255, 255);
 }
 main .portfolio .portfolio-container .popup {
-  display: none; /* Скрыто по умолчанию */
+  display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5); /* Черный фон с прозрачностью */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 main .portfolio .portfolio-container .popup .popup-content {
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 20px;
+  border-radius: 5%;
   background-color: #fefefe;
-  margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
-  max-width: 600px;
+  width: 60%;
+  height: auto;
+  max-width: 1100px;
+  text-align: center;
+}
+main .portfolio .portfolio-container .popup .popup-content h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .portfolio .portfolio-container .popup .popup-content p {
+  font-size: 20px;
 }
 main .portfolio .portfolio-container .popup .popup-content .close {
   color: #aaa;
@@ -231,14 +250,60 @@ main .portfolio .portfolio-container .popup .popup-content .close:focus {
   cursor: pointer;
 }
 main .portfolio .portfolio-container .popup .popup-content .popup-gallery {
+  margin-top: 50px;
   display: flex;
+  flex: 1 1 auto;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
+  justify-content: center;
 }
 main .portfolio .portfolio-container .popup .popup-content .popup-gallery img {
-  width: 100px;
-  height: 100px;
+  cursor: pointer;
+  width: 30%;
+  height: auto;
   object-fit: cover;
+  border-radius: 10%;
+  transition: transform 1s ease;
+}
+main .portfolio .portfolio-container .popup .popup-content .popup-gallery img:hover {
+  transform: scale(1.1);
+}
+main .portfolio .portfolio-container .zoom-img {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+main .portfolio .portfolio-container .zoom-img .zoom-content {
+  margin: auto;
+  margin-top: 7%;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+  height: auto;
+}
+main .portfolio .portfolio-container .zoom-img .close-zoom {
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 999;
+  cursor: pointer;
+}
+main .portfolio .portfolio-container .zoom-img .close:hover,
+main .portfolio .portfolio-container .zoom-img .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 main .services .services-container {
   text-align: center;
@@ -476,4 +541,59 @@ main .reviews .reviews-container .reviews-block .review .stars {
   margin: 0 20px 10px;
   display: flex;
   justify-content: flex-end;
+}
+
+footer {
+  padding: 50px 0;
+  background: #83746E;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footer-container ul li, footer .footer-container .footer-menu li {
+  text-align: center;
+  margin-bottom: 5px;
+}
+footer .footer-container ul li a, footer .footer-container .footer-menu li a {
+  color: #fff;
+  gap: 50px;
+  font-size: 25px;
+}
+footer .footer-container ul li a img, footer .footer-container .footer-menu li a img {
+  width: 40px;
+  height: auto;
+  transition: 1s;
+}
+footer .footer-container ul li a img:hover, footer .footer-container .footer-menu li a img:hover {
+  width: 45px;
+}
+footer .footer-container ul li a:hover, footer .footer-container .footer-menu li a:hover {
+  font-size: 27px;
+}
+footer .footer-container .footer-menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+footer .footer-container .footer-menu .footer-link {
+  display: flex;
+  justify-content: center;
+}
+footer .footer-container .footer-menu .footer-link a {
+  text-align: center;
+  border: 3px solid #DFD6D1;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  width: 200px;
+  padding: 15px;
+  transition: 1s;
+}
+footer .footer-container .footer-menu .footer-link a:hover {
+  background-color: #DFD6D1;
+  color: #20232C;
+  font-size: 27px;
+  border: 3px solid #20232C;
 }

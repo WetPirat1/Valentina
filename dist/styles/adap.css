@@ -1,0 +1,388 @@
+@media (max-width: 1600px) {
+  header .header-container .carousel .carousel-inner .carousel-item p {
+    font-size: 35px;
+  }
+  main .about-me .about-me-container h1 {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  main .about-me .about-me-container .about-me-desc img {
+    max-width: 500px;
+  }
+  main .about-me .about-me-container .about-me-desc .hero-right {
+    margin-top: 200px;
+  }
+  main .about-me .about-me-container .about-me-desc .hero-right p {
+    color: rgb(0, 0, 0);
+    width: 70%;
+  }
+  main .advantages .advantages-container .advantages-left img, main .advantages .advantages-container .advantages-right img {
+    max-width: 450px;
+  }
+  main .portfolio .portfolio-container h2 {
+    font-size: 40px;
+  }
+  main .portfolio .portfolio-container ul li a img {
+    max-width: 250px;
+  }
+  main .portfolio .portfolio-container ul li h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1280px) {
+  main .about-me .about-me-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  main .about-me .about-me-container .about-me-desc img {
+    max-width: 350px;
+  }
+  main .about-me .about-me-container .about-me-desc .hero-right {
+    margin-top: 200px;
+  }
+  main .about-me .about-me-container .about-me-desc .hero-right p {
+    font-size: 18px;
+  }
+  main .advantages .advantages-container .advantages-left img, main .advantages .advantages-container .advantages-right img {
+    max-width: 450px;
+  }
+  main .advantages .advantages-container .advantages-left h2, main .advantages .advantages-container .advantages-right h2 {
+    font-size: 30px;
+  }
+  main .advantages .advantages-container .advantages-left ul li p, main .advantages .advantages-container .advantages-right ul li p {
+    font-size: 20px;
+  }
+  main .portfolio .portfolio-container ul li a img {
+    max-width: 220px;
+  }
+  main .portfolio .portfolio-container .zoom-img .zoom-content {
+    margin-top: 0;
+  }
+  main .portfolio .portfolio-container .zoom-img .close-zoom {
+    top: 8%;
+    right: 16%;
+    color: rgb(0, 0, 0);
+  }
+  main .services .services-container .services-headline h2 {
+    font-size: 35px;
+  }
+  main .services .services-container .services-items ul li img {
+    max-width: 300px;
+  }
+  main .services .services-container .services-items ul li p {
+    font-size: 20px;
+  }
+  main .services .services-container .services-items ul li .service-text {
+    font-size: 20px;
+  }
+  main .services .services-container a {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  main .reviews .reviews-container {
+    padding: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  main .advantages .advantages-container .advantages-left img, main .advantages .advantages-container .advantages-right img {
+    max-width: 350px;
+  }
+  main .advantages .advantages-container .advantages-left h2, main .advantages .advantages-container .advantages-right h2 {
+    font-size: 25px;
+  }
+  main .advantages .advantages-container .advantages-left ul li p, main .advantages .advantages-container .advantages-right ul li p {
+    font-size: 20px;
+  }
+  main .portfolio .portfolio-container ul {
+    gap: 0;
+  }
+  main .portfolio .portfolio-container ul li {
+    width: 40%;
+    margin-bottom: 0;
+  }
+  main .portfolio .portfolio-container ul li a img {
+    max-width: 65%;
+  }
+  main .portfolio .portfolio-container .popup .popup-content {
+    margin-top: 13%;
+  }
+  main .portfolio .portfolio-container .zoom-img .zoom-content {
+    margin-top: 5%;
+  }
+  main .portfolio .portfolio-container .zoom-img .close-zoom {
+    top: 17%;
+    right: 13%;
+  }
+  main .services .services-container .services-headline h2 {
+    font-size: 30px;
+  }
+  main .services .services-container .services-headline p {
+    max-width: 70%;
+  }
+  main .services .services-container .services-items ul li img {
+    max-width: 260px;
+  }
+  main .services .services-container .services-items ul li .overlay {
+    font-size: 15px;
+  }
+  main .services .services-container a {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  main .reviews .reviews-container h2 {
+    margin-left: 0;
+  }
+  main .reviews .reviews-container .reviews-block {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  main .about-me .about-me-container h1 {
+    font-size: 30px;
+  }
+  main .about-me .about-me-container .about-me-desc img {
+    max-width: 250px;
+    max-height: auto;
+  }
+  main .about-me .about-me-container .about-me-desc .hero-right {
+    margin-top: 200px;
+  }
+  main .about-me .about-me-container .about-me-desc .hero-right p {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  main nav {
+    display: none;
+  }
+  main .advantages {
+    padding: 0 0 100px 0;
+  }
+  main .advantages .advantages-container .advantages-left img, main .advantages .advantages-container .advantages-right img {
+    max-width: 270px;
+  }
+  main .advantages .advantages-container .advantages-left h2, main .advantages .advantages-container .advantages-right h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 600;
+  }
+  main .advantages .advantages-container .advantages-left ul li p, main .advantages .advantages-container .advantages-right ul li p {
+    font-size: 15px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  main .portfolio .portfolio-container .popup .popup-content {
+    margin: 0 auto;
+    margin-top: 13%;
+    width: 80%;
+  }
+  main .contact .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  main .contact .contact-container .contact-info {
+    width: 40%;
+  }
+  main .contact .contact-container .contact-info ul {
+    margin-top: 150px;
+  }
+  main .contact .contact-container .contact-info ul li {
+    margin-bottom: 20px;
+  }
+  main .contact .contact-container .contact-info ul li h3 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  main .contact .contact-container .contact-info ul li a {
+    color: white;
+    font-size: 22px;
+    max-width: 80%;
+  }
+  main .contact .contact-container .contact-info ul li a:hover {
+    font-size: 25px;
+    border: 1px solid black;
+  }
+  main .contact .contact-container .contact-info img {
+    display: none;
+  }
+  main .contact .contact-container .contact-form {
+    width: 40%;
+    margin-top: 50px;
+  }
+  main .reviews .reviews-container {
+    padding: 20px;
+  }
+  main .reviews .reviews-container h2 {
+    margin-left: 0;
+  }
+  main .reviews .reviews-container .reviews-block {
+    gap: 20px;
+  }
+  main .reviews .reviews-container .reviews-block .review h3 {
+    font-size: 25px;
+  }
+  main .reviews .reviews-container .reviews-block .review p {
+    font-size: 17px;
+  }
+  footer .footer-container ul li {
+    margin-bottom: 15px;
+  }
+  footer .footer-container ul li a {
+    font-size: 20px;
+  }
+  footer .footer-container .footer-menu {
+    display: block;
+  }
+  footer .footer-container .footer-menu li {
+    margin-bottom: 15px;
+  }
+  footer .footer-container .footer-menu li a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  header .header-container .carousel .carousel-inner .carousel-item p {
+    font-size: 25px;
+  }
+  main .about-me .about-me-container {
+    padding: 0 20px;
+  }
+  main .about-me .about-me-container h1 {
+    font-size: 25px;
+  }
+  main .about-me .about-me-container .about-me-desc {
+    flex-direction: column;
+  }
+  main .about-me .about-me-container .about-me-desc img {
+    max-width: 300px;
+  }
+  main .about-me .about-me-container .about-me-desc .hero-right {
+    margin-top: 0px;
+  }
+  main .about-me .about-me-container .about-me-desc .hero-right p {
+    font-size: 18px;
+  }
+  main .advantages {
+    padding: 0 0 100px 0;
+  }
+  main .advantages .advantages-container {
+    flex-direction: column-reverse;
+  }
+  main .advantages .advantages-container .advantages-left, main .advantages .advantages-container .advantages-right {
+    flex: 1;
+  }
+  main .advantages .advantages-container .advantages-left img, main .advantages .advantages-container .advantages-right img {
+    max-width: 270px;
+  }
+  main .advantages .advantages-container .advantages-left h2, main .advantages .advantages-container .advantages-right h2 {
+    font-size: 25px;
+  }
+  main .advantages .advantages-container .advantages-left ul li p, main .advantages .advantages-container .advantages-right ul li p {
+    font-size: 20px;
+  }
+  main .advantages .advantages-container .advantages-left ul li li:last-child, main .advantages .advantages-container .advantages-right ul li li:last-child {
+    margin-bottom: 50px;
+  }
+  main .portfolio .portfolio-container ul {
+    gap: 10px;
+  }
+  main .portfolio .portfolio-container ul li a img {
+    max-width: 90%;
+  }
+  main .portfolio .portfolio-container .popup .popup-content {
+    margin: 0 auto;
+    margin-top: 13%;
+    width: 90%;
+  }
+  main .portfolio .portfolio-container .popup .popup-content .popup-gallery img {
+    width: 90%;
+  }
+  main .portfolio .portfolio-container .zoom-img .zoom-content {
+    margin-top: 45%;
+  }
+  main .portfolio .portfolio-container .zoom-img .close-zoom {
+    top: 31%;
+  }
+  main .services .services-container .services-headline h2 {
+    font-size: 30px;
+  }
+  main .services .services-container .services-headline p {
+    max-width: 70%;
+  }
+  main .services .services-container .services-items ul li img {
+    max-width: 250px;
+  }
+  main .services .services-container .services-items ul li .overlay {
+    font-size: 15px;
+  }
+  main .services .services-container a {
+    margin-top: 20px;
+    padding: 20px;
+  }
+  main .contact {
+    padding-top: 30px;
+  }
+  main .contact .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .contact .contact-container .contact-info {
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 200px;
+  }
+  main .contact .contact-container .contact-form {
+    width: 95%;
+    margin-top: 50px;
+    padding: 0;
+  }
+  main .reviews .reviews-container {
+    padding: 20px;
+  }
+  main .reviews .reviews-container h2 {
+    margin-left: 0;
+  }
+  main .reviews .reviews-container .reviews-block {
+    gap: 20px;
+  }
+  main .reviews .reviews-container .reviews-block .review {
+    width: 90%;
+  }
+  main .reviews .reviews-container .reviews-block .review h3 {
+    font-size: 25px;
+  }
+  main .reviews .reviews-container .reviews-block .review p {
+    font-size: 17px;
+  }
+}
+@media (max-width: 320px) {
+  header .header-container .carousel .carousel-inner .carousel-item p {
+    font-size: 20px;
+  }
+  main .about-me .about-me-container {
+    padding: 0 20px;
+  }
+  main .about-me .about-me-container h1 {
+    font-size: 23px;
+    margin-bottom: 50px;
+  }
+  main .about-me .about-me-container .about-me-desc img {
+    max-width: 280px;
+  }
+  main .advantages .advantages-container .advantages-left img, main .advantages .advantages-container .advantages-right img {
+    max-width: 220px;
+  }
+  main .advantages .advantages-container .advantages-left h2, main .advantages .advantages-container .advantages-right h2 {
+    font-size: 20px;
+  }
+  main .advantages .advantages-container .advantages-left ul li p, main .advantages .advantages-container .advantages-right ul li p {
+    font-size: 15px;
+  }
+  main .advantages .advantages-container .advantages-left ul li li:last-child, main .advantages .advantages-container .advantages-right ul li li:last-child {
+    margin-bottom: 50px;
+  }
+}

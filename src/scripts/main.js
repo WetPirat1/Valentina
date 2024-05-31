@@ -1,35 +1,4 @@
 
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var errorMessages = [];
-
-    // Проверка имени - должно содержать только буквы и пробелы
-    if (!/^[а-яА-Яa-zA-Z\s]+$/.test(name)) {
-        errorMessages.push("The name must contain only letters and spaces.");
-    }
-
-    // Проверка почты
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
-        errorMessages.push("Please enter a valid email address.");
-    }
-
-    // Проверка номера телефона - должен состоять только из цифр и допускается пробел, "-", "(", ")"
-    if (!/^\+?[\d()-\s]+$/.test(phone)) {
-        errorMessages.push("The phone number must contain only numbers and be between 7 and 15 characters in length.");
-    }
-
-    // Если есть ошибки, отменяем отправку формы и выводим сообщения об ошибках
-    if (errorMessages.length > 0) {
-        event.preventDefault();
-        var errorContainer = document.createElement("div");
-        errorContainer.className = "error";
-        errorContainer.innerHTML = errorMessages.join("<br>");
-        document.getElementById("myForm").appendChild(errorContainer);
-    }
-});
-
 
 function toggleDropdown() {
     document.getElementById("dropdownMenu").classList.toggle("show");
@@ -51,7 +20,7 @@ window.onclick = function(event) {
 
 document.addEventListener("DOMContentLoaded", function() {
     // Получаем все ссылки внутри .porfolio-item
-    const portfolioLinks = document.querySelectorAll(".portfolio.portfolio-container.porfolio-block.porfolio-item a");
+    const portfolioLinks = document.querySelectorAll(".porfolio-item a");
 
     // Функция открытия PopUp
     function openPopup(popupId) {
@@ -87,5 +56,47 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+function openModal(imgElement) {
+    var modal = document.getElementById("zoom-img");
+    var modalImg = document.getElementById("img01");
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    
+    var span = document.getElementsByClassName("close-zoom")[0];
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  }
+  
 
 
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var errorMessages = [];
+
+    // Проверка имени - должно содержать только буквы и пробелы
+    if (!/^[а-яА-Яa-zA-Z\s]+$/.test(name)) {
+        errorMessages.push("The name must contain only letters and spaces.");
+    }
+
+    // Проверка почты
+    if (!/^\S+@\S+\.\S+$/.test(email)) {
+        errorMessages.push("Please enter a valid email address.");
+    }
+
+    // Проверка номера телефона - должен состоять только из цифр и допускается пробел, "-", "(", ")"
+    if (!/^\+?[\d()-\s]+$/.test(phone)) {
+        errorMessages.push("The phone number must contain only numbers and be between 7 and 15 characters in length.");
+    }
+
+    // Если есть ошибки, отменяем отправку формы и выводим сообщения об ошибках
+    if (errorMessages.length > 0) {
+        event.preventDefault();
+        var errorContainer = document.createElement("div");
+        errorContainer.className = "error";
+        errorContainer.innerHTML = errorMessages.join("<br>");
+        document.getElementById("myForm").appendChild(errorContainer);
+    }
+});
